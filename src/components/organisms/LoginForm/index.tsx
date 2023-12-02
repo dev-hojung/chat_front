@@ -20,7 +20,9 @@ export const LoginForm = () => {
       <Input type="password" />
       <div className="mt-[10px] flex flex-col gap-[10px]">
         <Button type="submit">로그인</Button>
-        <Button onClick={onClickSignUp}>회원가입</Button>
+        <Button type="button" onClick={onClickSignUp}>
+          회원가입
+        </Button>
       </div>
     </form>
   );
