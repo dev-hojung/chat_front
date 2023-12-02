@@ -1,7 +1,8 @@
 'use client';
 
-import { Button, Input } from '@/components/atom';
+import { Button } from '@/components/atom';
 import { useLoginForm } from './hook';
+import { LabelInput } from '@/components/mocules';
 
 export const LoginForm = () => {
   const { onClickSignUp } = useLoginForm();
@@ -14,10 +15,8 @@ export const LoginForm = () => {
         console.log('aaaaaaaaaaaaa');
       }}
     >
-      <div>이메일</div>
-      <Input type="text" />
-      <div>패스워드</div>
-      <Input type="password" />
+      <LabelInput label="이메일" type="text" />
+      <LabelInput label="패스워드" type="password" />
       <div className="mt-[10px] flex flex-col gap-[10px]">
         <Button type="submit">로그인</Button>
         <Button type="button" onClick={onClickSignUp}>
