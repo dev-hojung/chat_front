@@ -1,6 +1,5 @@
-import Image from 'next/image';
-
 import { LoginForm } from '@/components/organisms/LoginForm';
+import Image from 'next/image';
 
 export default function Home() {
   return (
